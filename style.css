@@ -1,0 +1,121 @@
+:root {
+    --bg-color: orange;
+    --buttons: olive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    height: fit-content;
+    width: fit-content;
+    margin: auto auto;
+    background-color: var(--bg-color);
+    padding: 20px 40px;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    height: 40px;
+    width: 100px;
+    background-color: var(--buttons);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+option {
+    background-color: olive;
+    outline: none;
+}
+
+.exchange {
+    margin: auto;
+}
+
+.ex {
+    height: 20px;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.flag {
+    height: 60px;
+    width: 90px; 
+}
+
+.from,
+.to {
+    height: 60px;
+    width: 90px;
+    object-fit: cover;
+}
+
+button {
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    font-size: 15px;
+    background-color: var(--buttons);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.display {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(231, 157, 18);
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+@media only screen and (max-width:390px) {
+    main {
+        height: 100%;
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
